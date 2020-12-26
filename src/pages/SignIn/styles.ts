@@ -66,14 +66,17 @@ export const Content = styled.div`
   }
 
   form {
-    margin: 73px 0 143px;
+    margin: 0 auto;
     text-align: center;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
       margin-bottom: 87px;
       height: 38px;
       font-size: 30px;
-      text-align: left;
+      text-align: center;
       font-family: 'Muli', sans-serif;
       color: #707070;
       opacity: 1;
@@ -81,34 +84,71 @@ export const Content = styled.div`
 
     /* esqueci minha senha */
     a {
-      color: #f4ede8;
+      color: #707070;
       display: block;
-      margin-top: 24px;
+      margin-top: 18px;
+      margin-left: 318px;
       text-decoration: none;
       transition: color 0.2s;
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
 
       &:hover {
         color: ${shade(0.2, '#f4ede8')};
       }
     }
-  }
 
-  > a {
-    color: #ff9000;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 16px;
+    p {
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 40px auto;
+      color: #707070;
     }
 
-    &:hover {
-      color: ${shade(0.2, '#ff9000')};
+    & + p {
+      margin-top: 40px;
+      color: #707070;
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      line-height: 20px;
     }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .signWithGoogle {
+      height: 45px;
+      width: 263px;
+      margin: 40px auto;
+
+      display: flex;
+
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 100px;
+
+      img {
+        margin: 8px 20px;
+      }
+
+      p {
+        line-height: 22px;
+        width: 153px;
+
+        margin-top: 12px;
+
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+
+        color: #000000;
+      }
+
+    }
+
   }
 `;

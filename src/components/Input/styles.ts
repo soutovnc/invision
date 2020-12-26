@@ -7,13 +7,11 @@ interface ContainerProps {
 }
 
 export const Container = styled.div`
-  background: #232129;
-  border-radius: 10px;
-  padding: 16px;
+  background: #ffffff;
   width: 100%;
+  height: 42px;
 
-  border: 2px solid #232129;
-  color: #666360;
+  border-bottom: 1px solid #707070;
 
   display: flex;
   align-items: center;
@@ -26,14 +24,6 @@ export const Container = styled.div`
     background: transparent;
     flex: 1;
     border: 0;
-    color: #f4ede8;
-
-    &::placeholder {
-      color: #666360;
-    }
-  }
-
-  svg {
-    margin-right: 16px;
+    color: #000000;
   }
 `;
