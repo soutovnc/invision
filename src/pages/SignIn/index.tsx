@@ -5,7 +5,7 @@ import Input from '../../components/Input/index';
 import Button from '../../components/Button/index';
 
 import dataImg from '../../assets/data.png';
-import logoGoogle from '../../assets/logo-google.svg'
+import logoGoogle from '../../assets/logo-google.svg';
 
 import { Container, Content, Left } from './styles';
 
@@ -36,10 +36,12 @@ const SignIn: React.FC = () => {
           <Button type="submit">Sign In</Button>
           <p>Or</p>
           <Button className="signWithGoogle" type="submit">
-            <img src={logoGoogle} alt="Sign in with Google"/>
+            <img src={logoGoogle} alt="Sign in with Google" />
             <p>Sign in with Google</p>
           </Button>
-          <p>New <strong>Invision?</strong> Create Account</p>
+          <p>
+            New <strong>Invision?</strong> Create Account
+          </p>
         </Form>
       </Content>
     </Container>

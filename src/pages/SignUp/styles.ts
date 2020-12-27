@@ -1,81 +1,11 @@
 import styled from 'styled-components';
 
-import { shade } from 'polished';
-
-// import data from '../../assets/data.png';
-
 export const Container = styled.div`
   height: 100vh;
-  /* max-width: 1920px; */
+  width: 100%;
   display: flex;
   align-items: stretch;
   background-color: #a9c5ba;
-`;
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  place-content: center;
-
-  width: 100%;
-  max-width: 960px;
-
-  background-color: #ffffff;
-
-  span {
-    flex: 1;
-    display: flex;
-    margin: 120px 120px 47px;
-    width: 123px;
-    height: 48px;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  }
-
-  form {
-    margin: 80px 0;
-    width: 340px;
-    text-align: center;
-
-    h1 {
-      margin-bottom: 24px;
-    }
-
-    /* esqueci minha senha */
-    a {
-      color: #f4ede8;
-      display: block;
-      margin-top: 24px;
-      text-decoration: none;
-      transition: color 0.2s;
-
-      &:hover {
-        color: ${shade(0.2, '#f4ede8')};
-      }
-    }
-  }
-
-  > a {
-    color: #f4ede8;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 16px;
-    }
-
-    &:hover {
-      color: ${shade(0.2, '#ff9000')};
-    }
-  }
 `;
 
 export const Left = styled.div`
@@ -101,5 +31,98 @@ export const Left = styled.div`
     color: #ffffff;
     margin-top: 20px;
     font-family: 'Muli', sans-serif;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  place-content: center;
+
+  width: 100%;
+  max-width: 960px;
+
+  background-color: #ffffff;
+
+  header h1 {
+    margin: 120px 124px 73px 713px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 35px;
+    color: #000000;
+    opacity: 1;
+
+    display: flex;
+  }
+
+  form {
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 87px;
+      height: 38px;
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Muli', sans-serif;
+      color: #707070;
+      opacity: 1;
+    }
+
+    p {
+      margin: 40px;
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      color: #707070;
+    }
+
+    & + p {
+      margin-top: 40px;
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #707070;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .signWithGoogle {
+      height: 45px;
+      width: 263px;
+      margin: 40px auto;
+
+      display: flex;
+
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 100px;
+
+      img {
+        margin: 8px 20px;
+      }
+
+      p {
+        line-height: 22px;
+        width: 153px;
+
+        margin: 12px auto;
+
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+
+        color: #000000;
+      }
+    }
   }
 `;

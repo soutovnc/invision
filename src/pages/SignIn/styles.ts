@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 import { shade } from 'polished';
 
-import data2x from '../../assets/data2x.png';
-
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
@@ -147,8 +145,6 @@ export const Content = styled.div`
 
         color: #000000;
       }
-
     }
-
   }
 `;

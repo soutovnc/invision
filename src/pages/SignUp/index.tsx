@@ -9,6 +9,7 @@ import Input from '../../components/Input/index';
 import Button from '../../components/Button';
 
 import dataImg from '../../assets/data.png';
+import logoGoogle from '../../assets/logo-google.svg';
 
 import { Container, Content, Left } from './styles';
 
@@ -51,18 +52,33 @@ const SignUp: React.FC = () => {
         </p>
       </Left>
       <Content>
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <span>Invision</span>
+        <header>
+          <h1>Invision</h1>
+        </header>
+        <Form onSubmit={handleSubmit}>
           <h1>Getting Started</h1>
-
-          <Input name="name" placeholder="Nome" />
-          <Input name="email" placeholder="E-mail" />
-
-          <Input name="password" type="password" placeholder="Senha" />
-
-          <Button type="submit">Sign up</Button>
+          <Input name="name" placeholder="Full Name" />
+          <Input name="user" placeholder="User name or Email" />
+          <Input
+            name="password"
+            type="password"
+            placeholder="Create Password"
+          />
+          <Button type="submit">Sign Up</Button>
+          <p>Or</p>
+          <Button className="signWithGoogle" type="submit">
+            <img src={logoGoogle} alt="Sign in with Google" />
+            <p>Sign in with Google</p>
+          </Button>
+          <p>
+            By signing up, you agree to <strong>Invision</strong>
+            <br />
+            Terms of Conditions and Privacy Policy
+          </p>
+          <p>
+            Already on <strong>Invision?</strong> Log in
+          </p>
         </Form>
-        <a href="login">Voltar para Logon</a>
       </Content>
     </Container>
   );
