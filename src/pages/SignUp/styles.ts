@@ -1,41 +1,17 @@
 import styled from 'styled-components';
 
+import dataImg from '../../assets/data.png';
+
 export const Container = styled.div`
   height: 100vh;
-  width: 100%;
+
   display: flex;
   align-items: stretch;
-  background-color: #a9c5ba;
-`;
-
-export const Left = styled.div`
-  flex: 1;
-  margin: 112px 127px;
-  /* left: 127px; */
-  width: 960px;
-  height: 555px;
-
-  h1 {
-    height: 38px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Muli', sans-serif;
-  }
-
-  p {
-    width: 553px;
-    height: 60px;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 20px;
-    font-family: 'Muli', sans-serif;
-  }
 `;
 
 export const Content = styled.div`
-  display: flex;
+  /* display: flex; */
+  flex: 1;
   flex-direction: column;
 
   align-items: center;
@@ -61,9 +37,10 @@ export const Content = styled.div`
   form {
     margin: 0 auto;
     text-align: center;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
+    width: 434px;
+    /* flex: 1; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 
     h1 {
       margin-bottom: 87px;
@@ -124,5 +101,48 @@ export const Content = styled.div`
         color: #000000;
       }
     }
+  }
+
+  form label {
+    display: block;
+    margin: 21px 0 4px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    color: #707070;
+    text-align: left;
+  }
+`;
+
+export const Left = styled.div`
+  flex: 1;
+  height: 100vh;
+  background-color: #a9c5ba;
+  background-size: cover;
+
+  img {
+    display: flex;
+    margin: 112px 127px;
+    background: url(${dataImg}) no-repeat center;
+  }
+
+  h1 {
+    height: 38px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Muli', sans-serif;
+    line-height: 30px;
+    opacity: 1;
+  }
+
+  p {
+    width: 553px;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 202px;
+    font-family: 'Muli', sans-serif;
   }
 `;

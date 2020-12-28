@@ -30,8 +30,15 @@ const SignIn: React.FC = () => {
         </header>
         <Form onSubmit={handleSubmit}>
           <h1>Welcome to Invision</h1>
-          <Input name="email" placeholder="E-mail" />
-          <Input name="password" type="password" placeholder="Senha" />
+          <label>
+            User name or Email
+            <Input name="user" />
+          </label>
+          <label>
+            Password
+            <Input name="password" type="password" />
+          </label>
+
           <a href="forgot">Forgot password?</a>
           <Button type="submit">Sign In</Button>
           <p>Or</p>

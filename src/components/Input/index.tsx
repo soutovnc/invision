@@ -20,8 +20,9 @@ const Input: React.FC<InputProps> = ({ name, ...rest }) => {
   }, [fieldName, registerField]);
 
   return (
-    <Container>
+    <Container isErrored={!!error}>
       <input ref={inputRef} {...rest} />
+      {error}
     </Container>
   );
 };

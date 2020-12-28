@@ -1,20 +1,24 @@
 import styled from 'styled-components';
 
 import { shade } from 'polished';
+import dataImg from '../../assets/data.png';
 
 export const Container = styled.div`
   height: 100vh;
-  width: 100%;
   display: flex;
   align-items: stretch;
-  background-color: #a9c5ba;
 `;
 
 export const Left = styled.div`
   flex: 1;
-  margin: 112px 127px 30px;
-  width: 960px;
-  height: 555px;
+  background: #a9c5ba;
+  background-size: cover;
+
+  img {
+    display: flex;
+    margin: 112px 127px;
+    background: url(${dataImg}) no-repeat center;
+  }
 
   h1 {
     height: 38px;
@@ -30,12 +34,11 @@ export const Left = styled.div`
   p {
     width: 553px;
     height: 60px;
-    line-height: 25px;
     text-align: center;
     color: #ffffff;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 202px;
     font-family: 'Muli', sans-serif;
-    opacity: 1;
   }
 `;
 
@@ -48,7 +51,6 @@ export const Content = styled.div`
 
   width: 100%;
   max-width: 960px;
-
   background-color: #ffffff;
 
   header h1 {
@@ -66,9 +68,7 @@ export const Content = styled.div`
   form {
     margin: 0 auto;
     text-align: center;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
+    width: 434px;
 
     h1 {
       margin-bottom: 87px;
@@ -93,7 +93,7 @@ export const Content = styled.div`
       line-height: 18px;
 
       &:hover {
-        color: ${shade(0.2, '#f4ede8')};
+        color: ${shade(0.2, '#707070')};
       }
     }
 
@@ -101,7 +101,7 @@ export const Content = styled.div`
       font-family: 'Muli', sans-serif;
       font-size: 14px;
       line-height: 18px;
-      margin: 40px auto;
+      margin: 40px;
       color: #707070;
     }
 
@@ -137,7 +137,7 @@ export const Content = styled.div`
         line-height: 22px;
         width: 153px;
 
-        margin-top: 12px;
+        margin: 12px auto;
 
         text-align: left;
         font-size: 18px;
@@ -146,5 +146,14 @@ export const Content = styled.div`
         color: #000000;
       }
     }
+  }
+
+  form label {
+    display: block;
+    margin: 21px 0 4px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    color: #707070;
+    text-align: left;
   }
 `;

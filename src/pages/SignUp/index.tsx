@@ -33,11 +33,9 @@ const SignUp: React.FC = () => {
         abortEarly: false,
       });
     } catch (err) {
-      if (err instanceof Yup.ValidationError) {
-        const errors = getValidationErros(err);
+      const errors = getValidationErros(err);
 
-        formRef.current?.setErrors(errors);
-      }
+      formRef.current?.setErrors(errors);
     }
   }, []);
 
@@ -55,15 +53,21 @@ const SignUp: React.FC = () => {
         <header>
           <h1>Invision</h1>
         </header>
-        <Form onSubmit={handleSubmit}>
+        <Form ref={formRef} onSubmit={handleSubmit}>
           <h1>Getting Started</h1>
-          <Input name="name" placeholder="Full Name" />
-          <Input name="user" placeholder="User name or Email" />
-          <Input
-            name="password"
-            type="password"
-            placeholder="Create Password"
-          />
+          <label>
+            Full name
+            <Input name="name" />
+          </label>
+          <label>
+            User name or Email
+            <Input name="email" />
+          </label>
+          <label>
+            Create Password
+            <Input name="password" type="password" />
+          </label>
+
           <Button type="submit">Sign Up</Button>
           <p>Or</p>
           <Button className="signWithGoogle" type="submit">
