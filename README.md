@@ -1,23 +1,10 @@
-# Getting Started with Create React App
+# Invision
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para instalar as dependências necessárias, indico que use `yarn` no terminal. 
+Para ver a aplicação rodar, no terminal digite `yarn dev`.
 
-## Available Scripts
+Construi essa aplicação baseada em algo que já estudei em um bootcamp, não consegui concluir algumas exigências. Tais como a implementação de slides e a responsividade em telas menores. 
 
-In the project directory, you can run:
+Utilizei typescript e react, para a parte dos estilos preferi optar por usar styled-components, usei yup para validação e impressão de mensagens de erro dos inputs. Para a parte do "formulário" usei a lib unform. 
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### to-do
-
-[ ] finish Routes 
-[ ] config page slide
-[ ] add error message/style from inputs
-[ ] review layout of form 
-[ ] add usability for input's
+A questão dos estilos das mensagens de erro, procurei pelo layout disponibilizado e não encontrei modelo para seguir, sendo assim optei por criar um modelo do meu gosto. Falando nas mensagens de erro, ao tentar efetuar o login por exemplo, no input irá aparecer um ícone e a mensagem descritiva do erro em si, é mostrada em tela quando passar o mouse por cima. 
