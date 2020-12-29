@@ -10,8 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  /* display: flex; */
-  flex: 1;
+  display: flex;
   flex-direction: column;
 
   align-items: center;
@@ -23,7 +22,7 @@ export const Content = styled.div`
   background-color: #ffffff;
 
   header h1 {
-    margin: 120px 124px 73px 713px;
+    margin: 120px 124px 41px 713px;
     font-family: 'Muli', sans-serif;
     font-weight: bold;
     line-height: 48px;
@@ -35,7 +34,7 @@ export const Content = styled.div`
   }
 
   form {
-    margin: 0 auto;
+    margin: 42px auto;
     text-align: center;
     width: 434px;
     /* flex: 1; */
@@ -70,6 +69,10 @@ export const Content = styled.div`
 
     strong {
       font-weight: bold;
+    }
+
+    a {
+      color: #a9c5ba;
     }
 
     .signWithGoogle {

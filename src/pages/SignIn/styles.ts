@@ -54,7 +54,7 @@ export const Content = styled.div`
   background-color: #ffffff;
 
   header h1 {
-    margin: 120px 124px 73px 713px;
+    margin: 120px 124px 41px 713px;
     font-family: 'Muli', sans-serif;
     font-weight: bold;
     line-height: 48px;
@@ -66,7 +66,7 @@ export const Content = styled.div`
   }
 
   form {
-    margin: 0 auto;
+    margin: 42px auto;
     text-align: center;
     width: 434px;
 
@@ -81,9 +81,9 @@ export const Content = styled.div`
     }
 
     /* esqueci minha senha */
-    a {
+    p {
       color: #707070;
-      display: block;
+      display: flex;
       margin-top: 18px;
       margin-left: 318px;
       text-decoration: none;
@@ -97,24 +97,29 @@ export const Content = styled.div`
       }
     }
 
-    p {
-      font-family: 'Muli', sans-serif;
-      font-size: 14px;
-      line-height: 18px;
-      margin: 40px;
+    p:nth-child(6) {
+      display: block;
+      margin: 40px auto;
       color: #707070;
     }
 
-    & + p {
-      margin-top: 40px;
-      color: #707070;
+    span p {
       font-family: 'Muli', sans-serif;
       font-size: 14px;
-      line-height: 20px;
+      line-height: 18px;
+      margin: 40px auto;
+      color: #707070;
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      color: #a9c5ba;
     }
 
     strong {
       font-weight: bold;
+      margin: 0 4px;
     }
 
     .signWithGoogle {

@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import Tooltip from '../Tooltip';
+
 interface ContainerProps {
   isErrored: boolean;
 }
@@ -34,5 +36,22 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
     color: #000000;
     font-size: 20px;
+  }
+`;
+
+export const Error = styled(Tooltip)`
+  margin-left: 16px;
+  svg {
+    margin: 8px;
+  }
+
+  span {
+    background: #c53030;
+    color: #fff;
+    text-align: center;
+
+    &::before {
+      border-color: #c53030 transparent;
+    }
   }
 `;

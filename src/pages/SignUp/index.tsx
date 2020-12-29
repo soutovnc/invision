@@ -2,6 +2,7 @@ import React, { useCallback, useRef } from 'react';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 import getValidationErros from '../../utils/getValidationErrors';
 
@@ -74,14 +75,17 @@ const SignUp: React.FC = () => {
             <img src={logoGoogle} alt="Sign in with Google" />
             <p>Sign in with Google</p>
           </Button>
-          <p>
-            By signing up, you agree to <strong>Invision</strong>
-            <br />
-            Terms of Conditions and Privacy Policy
-          </p>
-          <p>
-            Already on <strong>Invision?</strong> Log in
-          </p>
+          <span>
+            <p>
+              By signing up, you agree to <strong>Invision</strong>
+              <br />
+              <Link to="/terms">Terms of Conditions</Link> and{' '}
+              <Link to="/policy">Privacy Policy</Link>
+            </p>
+            <p>
+              Already on <strong>Invision?</strong> <Link to="/">Log in</Link>
+            </p>
+          </span>
         </Form>
       </Content>
     </Container>
